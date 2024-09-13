@@ -222,7 +222,8 @@ header("Expires: Sat, 26 Jul 1997 05:00:00 GMT"); // Fecha en el pasado
 									echo "<hr>";
 								}
 							} else {
-								echo "No se encontraron resultados";
+								echo "No se encontraron restaurantes 3";
+								echo '<br> <button onclick=" window.location.href=\'../login/registro_tienda/registro.php\';">Agregar tienda </button>';
 							}
 						} catch (PDOException $e) {
 							// Manejar errores de conexión

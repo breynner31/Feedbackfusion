@@ -22,13 +22,12 @@ try {
     $pdo = new PDO("mysql:host=localhost;dbname=feedbackfusion", "root", "");
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     
-    // Consulta SQL para obtener el ID del restaurante asociado al usuario actual
+
     $query_id_restaurante = "SELECT id_restaurante FROM user WHERE email = ?";
     $stmt_id_restaurante = $pdo->prepare($query_id_restaurante);
     $stmt_id_restaurante->execute([$email_usuario]);
     $id_restaurante = $stmt_id_restaurante->fetchColumn();
 
-    // Verificar si se encontró el ID del restaurante asociado al usuario
     if (!$id_restaurante) {
         echo "<script>alert('No se encontro restaurante asociado al usuario');</script>";
         exit;

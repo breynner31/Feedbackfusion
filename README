@@ -1,0 +1,24 @@
+## Descripción
+
+Este proyecto implementa un sistema utilizando una combinación de tecnologías modernas para ofrecer una solución robusta y eficiente. La metodología ágil se emplea para iterar y perfeccionar el prototipo basándose en pruebas y retroalimentación continua. El sistema se basa en una arquitectura tecnológica bien definida que integra el desarrollo backend con el frontend y la base de datos.
+
+## Tecnologías Utilizadas
+
+- **Backend**: PHP
+  - **Gestor de Dependencias**: Composer
+  - **Librería WebSocket**: Ratchet
+- **Frontend**: HTML, CSS, JavaScript Vanilla
+  - **Librería CSS**: Bootstrap
+- **Base de Datos**: MySQL
+- **Control de Versiones**: GitHub (v0.1.0)
+
+## Configuración del Entorno
+
+### Docker
+
+Para ejecutar el entorno de desarrollo con Docker, sigue estos pasos:
+
+1. Navega al directorio `api`:
+   ```bash
+   cd api
+   php server_commit.php

@@ -37,8 +37,8 @@ include_once("controlador/controlador_registrar_usuario.php");
                 </div>
                 <input type="submit" class="boton" value="Sign up" name="sign-up">
 
-                <div class="title-two"><p>Ya tienes una cuenta, <a href="login.php" id="link">Inicia sesion</a></p></div>
-                <div class="title-two"><p><a href="../reviews/index-copy.php" id="link">Inicio   <i class="fa fa-home"></i></a></p></div>
+                <div class="title-two"><p>Ya tienes una cuenta, <a href="index.php" id="link">Inicia sesion</a></p></div>
+                <div class="title-two"><p><a href="../reviews/index.php" id="link">Inicio   <i class="fa fa-home"></i></a></p></div>
             </div>
         </form>
     </div>

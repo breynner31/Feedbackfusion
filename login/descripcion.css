@@ -1,0 +1,380 @@
+.restaurant-info {
+  margin-top: 10px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Alinea el contenido al centro horizontal */
+  text-align: center; /* Alinea el texto al centro horizontal */
+  margin-bottom: 30px;
+}
+
+
+.title h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 2.75rem;
+  color: #051922;
+  text-align: center;
+}
+
+
+.titulo h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 2.25rem;
+  color: #051922;
+  text-align: center;
+
+}
+
+.score h6 {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 2.25rem;
+  color: #051922;
+  text-align: center;
+}
+
+.content h6 {
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.5rem;
+  margin: 0 0 1.25rem 0;
+  color: #051922;
+  text-align: center;
+}	
+
+.rating {
+
+  text-align: center;
+  margin-bottom: 5px; /* Reducir el espacio entre el conjunto de estrellas y el siguiente párrafo */
+  display: flex;
+  justify-content: center; /* Alinear las estrellas al centro */
+}
+
+.rating .fa-star {
+  margin-top: 20px;
+  font-size: 16px; /* Tamaño de las estrellas */
+  color: #fff; /* Color interior de las estrellas */
+  -webkit-text-stroke: 1px #000; /* Borde negro de las estrellas */
+  margin-right: 5px; /* Espacio entre las estrellas */
+  margin-bottom: 20px;
+ 
+}
+
+.rating .fa-star.checked {
+  color: #ffd700; /* Color de las estrellas seleccionadas */
+}
+
+.rating-stars-container {
+	margin-top: -65px;
+  overflow-x: auto; /* Habilitar desplazamiento horizontal cuando el contenido excede el ancho del contenedor */
+}
+
+.rating > span {
+  display: inline-block;
+  position: relative;
+  margin-right: 20px; /* Ajusta el espacio entre las estrellas */
+  font-size: 16px; /* Reduce el tamaño de la fuente de las estrellas */
+}
+
+.rating > span:before {
+  content: "\2605";
+  position: absolute;
+}
+
+    /* Estilos para la sección de comentarios */
+    .comentario-section {
+      margin-top: 20px;
+  }
+
+  /* Estilos para cada comentario individual */
+  .comentario {
+  position: relative;
+  left: 135px;
+      background-color: #f9f9f9;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      padding: 15px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+  width: 90rem;
+  }
+
+  /* Estilos para la información del usuario */
+  .user-info {
+      display: flex;
+      align-items: center;
+  }
+
+  .user-info .avatar {
+      width: 40px;
+      height: 40px;
+      background-color: #ddd;
+      border-radius: 50%;
+      margin-right: 10px;
+  }
+
+  .user-info .details {
+      flex: 1;
+  }
+
+  .user-info h4 {
+      margin: 0;
+      font-size: 16px;
+      font-weight: 600;
+  }
+
+  .user-info h4 span {
+      font-size: 12px;
+      font-weight: normal;
+      color: #888;
+  }
+
+  .user-info p {
+      margin-top: 5px;
+      font-size: 14px;
+  }
+
+  .user-info p:last-child {
+      margin-bottom: 0;
+  }
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  background-color: #ddd;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.details h4 {
+  margin: 0;
+  font-size: 16px;
+  color: #051922;
+}
+
+.details h4 span {
+  font-size: 14px;
+  color: #051922;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.details p {
+  margin: 5px 0 0 0;
+  font-size: 14px;
+  color: #051922;
+}
+
+.reply-button {
+  background-color: #f28123;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  font-size: 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.reply-button:hover {
+  background-color: #051922;
+}
+
+.reply-form {
+  display: none;
+  margin-top: 10px;
+}
+
+.reply-form .form-group {
+  margin-bottom: 10px;
+}
+
+.reply-form .form-group input,
+.reply-form .form-group textarea {
+  width: 100%;
+  padding: 5px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.reply-form button[type="submit"] {
+  background-color: #f28123;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  font-size: 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.reply-form button[type="submit"]:hover {
+  background-color: #051922;
+}
+
+.leave-comment h3 {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.leave-comentario {
+  text-align: center;
+}
+
+.form-container {
+  border: 2px solid #000;
+  border-radius: 10px;
+  background-color: #ffffff;
+  padding: 14px;
+  max-width: 80rem;
+  margin: 0 auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 10px;
+}
+
+.form-group, .form-group-email, .form-group-rating {
+  margin-bottom: 15px;
+}
+
+.form-group label, .form-group-email label, .form-group-rating label {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 5px;
+  color: #000;
+}
+
+.form-group input, .form-group-email input, .form-group textarea {
+  width: 80%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #000;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  display: block;
+}
+
+.form-group-email input {
+  width: calc(80% - 1px); /* Ajusta el ancho para que coincida con el padding */
+  margin-left: 7.9rem;
+}
+
+.form-group input[readonly], .form-group-email input[readonly] {
+  background-color: #e9ecef;
+  cursor: not-allowed;
+  padding-right: 30px; /* Espacio para el ícono */
+}
+
+.form-group input[readonly]::after, .form-group-email input[readonly]::after {
+  content: "\1F512"; /* Unicode para el ícono de bloqueo */
+  font-size: 18px;
+  color: #000;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.star-rating {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.star-rating input[type="radio"] {
+  display: none;
+}
+
+.star-rating label {
+  font-size: 24px;
+  color: #ffd700;
+  cursor: pointer;
+}
+
+.star-rating input[type="radio"]:checked ~ label {
+  color: #000;
+}
+
+button[type="submit"] {
+  background-color: #f28123;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+button[type="submit"]:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+
+
+
+
+/* Estilos para la información del usuario */
+.user-info {
+  display: flex;
+  align-items: center;
+}
+
+.user-info .avatar {
+  width: 40px;
+  height: 40px;
+  background-color: #ddd;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.user-info .details {
+  flex: 1;
+}
+
+.user-info h4 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.user-info h4 span {
+  font-size: 12px;
+  font-weight: normal;
+  color: #888;
+}
+
+.user-info p {
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+.user-info p:last-child {
+  margin-bottom: 0;
+}
+
+.star-rating {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center; 
+  padding: 20px 0;
+  width: 100%; 
+  margin: 0 auto; 
+}
+.star-rating input[type="radio"] {
+  display: none;
+}
+.star-rating label {
+  font-size: 30px;
+  color: #ddd;
+  cursor: pointer;
+}
+.star-rating label:hover,
+.star-rating label:hover ~ label,
+.star-rating input[type="radio"]:checked ~ label {
+  color: #f2b600;
+}
+

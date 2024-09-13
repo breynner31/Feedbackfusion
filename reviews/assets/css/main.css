@@ -6,6 +6,7 @@ html {
   height: 100%;
 }
 
+
 body {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
@@ -861,6 +862,7 @@ h2.widget-title {
   position: relative;
   padding-bottom: 20px;
   color: #fff;
+
 }
 
 h2.widget-title:after {
@@ -1391,7 +1393,7 @@ html, body {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 7px;
-  font-size: 15px;
+  font-size: 30px;
 }
 
 .hero-text h1 {
@@ -1948,6 +1950,7 @@ span.comment-date {
   line-height: 1.8em;
   margin-top: 25px;
   margin-bottom: 25px;
+  text-align: justify;
 }
 
 .time-counter {

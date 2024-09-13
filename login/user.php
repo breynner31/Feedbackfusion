@@ -4,7 +4,10 @@ include_once("database.php");
 
 class User extends Database{
 
-    private $nombre;
+    private $name;
+    private $email;
+    private $id_user;
+    private $id_restaurante;
     private $username;
 
     public function userExist($email, $password){
@@ -27,6 +30,8 @@ class User extends Database{
         foreach ($query as $currentUser){
             $this->name = $currentUser['name'];
             $this->email = $currentUser['email'];
+            $this->id_user =$currentUser['id_user'];
+            $this->id_restaurante =$currentUser['id_restaurante'];
       
             
         }
@@ -35,5 +40,15 @@ class User extends Database{
     public function getNombre(){
         return $this->name;
     }
+
+    public function getid_user(){
+        return $this->id_user;
+    }
+
+    public function getid_restaurante(){
+        return $this->id_restaurante;
+    }
 }
+
+
 ?>
